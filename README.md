@@ -25,11 +25,7 @@ O painel foi projetado para ser um guia diário, rápido e fácil de consultar, 
 Este projeto não requer nenhuma instalação ou build.
 <ol>
   <li>Clone o repositório:</li>
-  <code>
-    ```
-    git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-    ```
-  </code>
+  <code>git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git</code>
   <li>Abra o arquivo:</li>
   <p>Basta abrir o arquivo index.html em qualquer navegador de internet.</p>
 </ol>
