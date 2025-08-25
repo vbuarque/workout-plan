@@ -49,7 +49,8 @@ Todo o conteúdo do plano (exercícios, séries, repetições, dieta, etc.) est�
     4x 6-8
   </span>
 </div>
-
+```
+```
 <!-- Linha editada -->
 <div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center">
   <span>
@@ -60,7 +61,6 @@ Todo o conteúdo do plano (exercícios, séries, repetições, dieta, etc.) est�
   </span>
 </div>
 ```
-
 
 <h2>⚠️ Disclaimer</h2>
 O plano de treino e nutrição contido neste painel foi gerado como um exemplo educacional com base em dados específicos de bioimpedância. Ele serve como um modelo e um guia de organização. Antes de iniciar qualquer rotina de treino ou dieta, é fundamental consultar um profissional de Educação Física e um Nutricionista.
