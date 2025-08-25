@@ -25,9 +25,11 @@ O painel foi projetado para ser um guia diário, rápido e fácil de consultar, 
 Este projeto não requer nenhuma instalação ou build.
 <ol>
   <li>Clone o repositório:</li>
-  ```
-  git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-  ```
+  <code>
+    ```
+    git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+    ```
+  </code>
   <li>Abra o arquivo:</li>
   <p>Basta abrir o arquivo index.html em qualquer navegador de internet.</p>
 </ol>
@@ -43,10 +45,24 @@ Todo o conteúdo do plano (exercícios, séries, repetições, dieta, etc.) est�
 
 ```
 <!-- Linha original -->
-  <div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center"><span>Supino Reto com Barra</span><span class="font-bold text-emerald-400">4x 6-8</span></div>
+<div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center">
+  <span>
+    Supino Reto com Barra
+  </span>
+  <span class="font-bold text-emerald-400">
+    4x 6-8
+  </span>
+</div>
 
-  <!-- Linha editada -->
-  <div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center"><span>Seu Novo Exercício</span><span class="font-bold text-emerald-400">3x 10</span></div>
+<!-- Linha editada -->
+<div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center">
+  <span>
+    Seu Novo Exercício
+  </span>
+  <span class="font-bold text-emerald-400">
+    3x 10
+  </span>
+</div>
 ```
 
 
