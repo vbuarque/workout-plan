@@ -4,30 +4,32 @@ Este projeto é um painel de controle de fitness pessoal, criado como uma págin
 O painel foi projetado para ser um guia diário, rápido e fácil de consultar, ajudando a manter o foco e a consistência nas rotinas de treino e alimentação.
 
 <h1>✨ Features</h1>
-1. Dashboard de Metas: Visualização clara do ponto de partida e dos objetivos a serem alcançados (% de gordura e peso).
-
-2. Plano de Treino Interativo: Seção com abas para navegar facilmente entre os diferentes treinos da semana (Treino A, B, C).
-
-3. Guia Alimentar: Resumo prático da dieta, com horários e composição das refeições principais.
-
-4. Checklist de Preparo Semanal: Um guia para o "meal prep" de domingo, otimizando a rotina da semana.
-
-5. Design Responsivo: Totalmente funcional e agradável de usar tanto no desktop quanto no celular.
+<ol>
+  <li>Dashboard de Metas: Visualização clara do ponto de partida e dos objetivos a serem alcançados (% de gordura e peso).</li>
+  <li>Plano de Treino Interativo: Seção com abas para navegar facilmente entre os diferentes treinos da semana (Treino A, B, C).</li>
+  <li>Guia Alimentar: Resumo prático da dieta, com horários e composição das refeições principais.</li>
+  <li>Checklist de Preparo Semanal: Um guia para o "meal prep" de domingo, otimizando a rotina da semana.</li>
+  <li>Design Responsivo: Totalmente funcional e agradável de usar tanto no desktop quanto no celular.</li>
+</ol>
 
 <h1>🚀 Tecnologias Utilizadas</h1>
-. Este é um projeto front-end puro, construído com:
-. HTML5: Para a estrutura semântica do conteúdo.
-. Tailwind CSS: Para a estilização rápida, moderna e responsiva diretamente no HTML.
-. JavaScript (Vanilla): Para a funcionalidade de abas na seção de treinos.
+<p>Este é um projeto front-end puro, construído com:</p>
+
+<ul>
+  <li>HTML5: Para a estrutura semântica do conteúdo.</li>
+  <li>Tailwind CSS: Para a estilização rápida, moderna e responsiva diretamente no HTML.</li>
+  <li>JavaScript (Vanilla): Para a funcionalidade de abas na seção de treinos.</li>
+</ul>
 
 <h1>🔧 Como Usar e Personalizar</h1>
 Este projeto não requer nenhuma instalação ou build.
+<ol>
+  <li>Clone o repositório:</li>
+  <code>git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git</code>
 
-1. Clone o repositório:
-<code>git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git</code>
-
-2. Abra o arquivo:
-Basta abrir o arquivo index.html em qualquer navegador de internet.
+  <li>Abra o arquivo:</li>
+  <p>Basta abrir o arquivo index.html em qualquer navegador de internet.</p>
+</ol>
 
 <strong>Personalização</strong>
 Todo o conteúdo do plano (exercícios, séries, repetições, dieta, etc.) está diretamente no arquivo index.html. Para personalizar o painel com suas próprias informações, simplesmente edite os textos dentro das tags HTML correspondentes.
