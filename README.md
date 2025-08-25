@@ -40,11 +40,13 @@ Todo o conteúdo do plano (exercícios, séries, repetições, dieta, etc.) est�
 
 <strong>Exemplo:</strong> Para alterar um exercício no Treino A, encontre a seção <!-- TREINO A --> e edite a linha desejada:
 <code>
+```
 <!-- Linha original -->
   <div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center"><span>Supino Reto com Barra</span><span class="font-bold text-emerald-400">4x 6-8</span></div>
 
   <!-- Linha editada -->
   <div class="workout-card bg-gray-700 p-3 rounded-md flex justify-between items-center"><span>Seu Novo Exercício</span><span class="font-bold text-emerald-400">3x 10</span></div>
+```
 </code>
 
 <h2>⚠️ Disclaimer</h2>
