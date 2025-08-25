@@ -1,13 +1,13 @@
-# Nome do seu workflow. Aparecerá na aba "Actions" do seu repositório.
+# Nome do seu workflow.
 name: Deploy Painel Fitness to GitHub Pages
 
-# Gatilho: Este workflow rodará toda vez que houver um 'push' na branch 'main'.
+# Gatilho: Rodará em push na branch 'main'.
 on:
   push:
     branches:
-      - main # Ou 'master', dependendo do nome da sua branch principal
+      - main
 
-# Permissões necessárias para que a Action possa escrever no seu repositório (para criar a branch de deploy).
+# Permissões necessárias.
 permissions:
   contents: read
   pages: write
@@ -15,43 +15,29 @@ permissions:
 
 # Tarefas (jobs) que o workflow executará.
 jobs:
-  # A única tarefa que temos é a de 'deploy' (publicação).
   deploy:
-    # Define que esta tarefa rodará em um ambiente de "página do GitHub".
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # A URL do site publicado.
-    
-    # O tipo de máquina virtual que será usada. 'ubuntu-latest' é o padrão e recomendado.
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
-    # Os passos (steps) que a tarefa executará em sequência.
     steps:
-      # 1. Baixa o código do seu repositório para a máquina virtual.
+      # 1. Baixa o código do seu repositório.
       - name: Checkout
         uses: actions/checkout@v4
 
       # 2. Configura o ambiente para usar o GitHub Pages.
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      # 3. "Constrói" o site. Como seu projeto é HTML puro, ele apenas prepara os arquivos para o upload.
-      - name: Build
-        run: |
-          # Este passo pode ser usado para instalar dependências e rodar builds (ex: npm run build).
-          # Como nosso projeto é apenas HTML, não precisamos fazer nada aqui.
-          # Apenas garantimos que o diretório de saída exista.
-          mkdir -p _site
-          cp index.html _site/index.html
-          
-      # 4. Faz o upload dos arquivos "construídos" para o GitHub Pages.
+      
+      # 3. Faz o upload dos arquivos para o GitHub Pages (sem passo de build).
+      #    Esta é a principal mudança!
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Pasta que contém os arquivos do site a serem publicados.
-          path: './_site'
+          # A Action irá empacotar tudo que está na pasta raiz do projeto.
+          path: '.'
 
-      # 5. Finaliza o deploy, publicando os arquivos no ambiente do GitHub Pages.
+      # 4. Finaliza o deploy, publicando os arquivos.
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
